@@ -1,0 +1,153 @@
+/* .row .col .fix {
+    transform: translateX(0);
+} */
+
+
+
+
+header
+ul
+.user-img {
+    width: 64px;
+    height: 64px;
+    display: block;
+}
+
+
+main {
+    margin-left: 300px;
+}
+.side-nav 
+.user-view {
+    position: relative;
+    padding: 32px 32px 0;
+    margin-bottom: 8px;
+}
+
+.side-nav 
+.user-view 
+.background, 
+.side-nav 
+.userView .background {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.side-nav 
+.user-view>a, 
+.side-nav .userView>a {
+    height: auto;
+    padding: 0;
+}
+
+
+.side-nav
+.user-view
+.name {
+    padding-top: 20px;
+    display: block;
+    line-height: 16px;
+}
+
+main 
+.container
+.card.horizontal 
+.card-image img {
+    height: 64px;
+    width: 64px;
+}
+
+main
+.container
+.card 
+.card-name {
+    color: #ee6e73;
+    padding-left: 24px;
+    font-weight: bold;
+    font-family: 微软雅黑;
+}
+
+main
+.container
+.card 
+.card-name:after {
+    content: ":";
+}
+
+main
+.container
+.card 
+.card-content {
+    padding: 0 0 0 12px;
+}
+
+main 
+.container
+.card
+.card-action
+i {
+    padding-left: 10px;
+}
+
+  .text-bord 
+{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+    width: 80vw;
+    z-index: 99;
+    margin-left: 300px;
+    
+}
+
+ .text-bord 
+ .input-field
+ {
+     position: relative;
+     margin: 0 auto;
+ }
+
+.text-bord
+.container 
+.card-action
+ a {
+     font-size: 24px;
+ }
+
+ .text-bord 
+ .container 
+ .card-action
+.material-icons {
+    padding-left: 10px;
+}
+
+main 
+.container
+.changgeC {
+    animation: Opacity 0.8s;
+}
+
+@keyframes Opacity {
+    0% {opacity: 0};
+    100% {opacity: 1}
+}
+
+@media screen and (max-width:600px) {
+    main {
+        margin-left: 0;
+    }
+    
+    .text-bord {
+        width: 80vw;
+        margin-left: 0;
+    } 
+    
+}
+
+

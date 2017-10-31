@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 左边个人主页开始 -->
+    <header>
+        <ul id="nav-mobile" class="side-nav fixed">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="img/two.jpg">
+                    </div>
+                    <a href="#!user">
+                        <img class="circle user-img" src="img/one.jpeg">
+                    </a>
+                    <a href="#!name">
+                        <span class="white-text name"></span>
+                    </a>
+                    <a href="#!email">
+                        <span class="white-text email">21564713@qq.com</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a class="waves-effect waves-teal  controlWrite" href="#!">
+                    <i class="material-icons">mode_edit</i>write some</a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li>
+                <a class="subheader">Subheader</a>
+            </li>
+            <li>
+                <a class="waves-effect" href="#!">我的留言板</a>
+            </li>
+            <li>
+                <a class="waves-effect" href="#!">公共留言板</a>
+            </li>
+            <li>
+                <a class="waves-effect waves-light btn sign-out">
+                    <i class="material-icons right">power_settings_new</i>sign out</a>
+
+            </li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse">
+            <i class="material-icons">menu</i>
+        </a>
+    </header>
+
+    <!-- 左边个人主页结束 -->
+    <!-- 留言卡片开始 -->
+    <!-- <iframe src="publickBoard.html" frameborder="0"></iframe> -->
+    <main>
+        <div class="container">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="img/one.jpeg">
+                </div>
+                <div class="card-stacked">
+                    <p class="card-name">啊啊</p>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">0
+                            <i class='material-icons'>thumb_up</i>
+                        </a>
+                        <a href="#">0
+                            <i class='material-icons'>thumb_down</i>
+                        </a>
+                        <span class="right">time</span>
+                    </div>
+                </div>
+                <!-- 留言卡片结束 -->
+                <!-- 输入框开始 -->
+                <!-- 输入框结束 -->
+            </div>
+    </main>
+    <div class="text-bord ">
+        <div class="container">
+            <div class="input-field">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Textarea</label>
+                <div class="bord-buton">
+                    <a class="waves-effect waves-light btn  right">
+                        <i class="material-icons left">done</i>submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    // $(".button-collapse").sideNav();
+</script>
+
+</html>
