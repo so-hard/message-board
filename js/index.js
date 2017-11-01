@@ -7,12 +7,17 @@ var textInput = $(".text-bord textarea");
 var  signOut = $(".side-nav .sign-out");
 var  navName = $(".side-nav .user-view .name ");
 var now =new Date();
-var theTime = new Date(12466);
+var theTime = new Date(150943798800);
 console.log(now.getDate());
-console.log(theTime.toDateString());
+console.log(theTime);
 console.log(theTime.toTimeString());
 console.log(theTime.toLocaleDateString()); //1970/1/1
 console.log(theTime.toLocaleTimeString());
+console.log(now.toLocaleTimeString());
+console.log(Date.parse(now)/1000);
+
+
+
 
 
 function getCookie(key) {
@@ -28,7 +33,6 @@ function getCookie(key) {
 function checkCookie ( ) {
     var uid = getCookie('uid');
     var username = getCookie('username');
-    console.log(username);
     if (!uid) {
         window.location.href = "login.html"    
     }
@@ -37,6 +41,15 @@ function checkCookie ( ) {
 
 // 创造节点.. 
 function creactNode(data) {
+    var time = new Date(data.dateline*1000);
+    var timeYear = time.toLocaleDateString();
+    var timeHours = time.getHours();
+    var timeMiu = time.getMinutes();
+    var carTime = $("<span>",{
+        class : "right",
+        html : timeYear + "－" +　timeHours + ":" + timeMiu
+    })    
+    //以上 time
     var carBox = $("<div class = 'card horizontal changgeC'></div>");
     var varImgA = $("<a>", {
         href: "#"
@@ -66,12 +79,18 @@ function creactNode(data) {
     }))
     carAction.append(supportA);
     carAction.append(opposeA);
+    carAction.append(carTime);
     carStacked.append(carContent);
     carStacked.append(carAction);
     carBox.append(carImg);
     carBox.append(carStacked);
     carContainer.append(carBox);
-    console.log()
+    console.log(time.toLocaleTimeString());
+   
+    console.log(timeHours + ":"+ timeMiu);
+    
+    let now = new Date();
+    console.log(now-time);
 }
 
 
