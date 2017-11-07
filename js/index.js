@@ -17,6 +17,7 @@ function scrollLoading() {
         console.log(1),
         function () {
             if (main.height() + main.scrollTop() + 200 >= publicBorad.height()) {
+                iPage++;                                
                 showList();
             }
         }
@@ -30,15 +31,15 @@ function showList() {
     $.ajax({
         type: "get",
         url: "guestbook/index.php",
-        data: "m=index&a=getList&n=5&&page=" + iPage,
+        data: "m=index&a=getList&n=6&page=" + iPage,
         dataType: "json",
         success: function (data) {
             var data = data.data;
             if (data) {
+                console.log(data);                
                 for (var i = 0; i < data.list.length; i++) {
                     creactNode(data.list[i]);
                 }
-                iPage++;
             }
         }
     })
@@ -114,7 +115,7 @@ function creactNode(data) {
 $(document).ready(checkCookie());
 $(".button-collapse").sideNav();
 showList();
-scrollLoading()
+scrollLoading();
 
 tabPub.click(
     function () {
