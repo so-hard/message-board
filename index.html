@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="img/board.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>bord</title>
+    <title>board</title>
 </head>
 
 <body>
@@ -42,11 +42,11 @@
             <li>
                 <a class="subheader">Subheader</a>
             </li>
-            <li>
-                <a class="waves-effect" href="#!">我的留言板</a>
+            <li class="tab">
+                <a class="waves-effect public-board shadow" href="#">Public board</a>
             </li>
-            <li>
-                <a class="waves-effect" href="#!">公共留言板</a>
+            <li class="tab">
+                <a class="waves-effect private-borad" href="#">Your board</a>
             </li>
             <li>
                 <a class="waves-effect waves-light btn sign-out">
@@ -63,37 +63,20 @@
     <!-- 留言卡片开始 -->
     <!-- <iframe src="publickBoard.html" frameborder="0"></iframe> -->
     <main>
-        <div class="container">
-            <div class="card horizontal">
-                <div class="card-image">
-                    <img src="img/one.jpeg">
-                </div>
-                <div class="card-stacked">
-                    <p class="card-name">啊啊</p>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">0
-                            <i class='material-icons'>thumb_up</i>
-                        </a>
-                        <a href="#">0
-                            <i class='material-icons'>thumb_down</i>
-                        </a>
-                        <span class="right">time</span>
-                    </div>
-                </div>
-                <!-- 留言卡片结束 -->
-                <!-- 输入框开始 -->
-                <!-- 输入框结束 -->
-            </div>
+        <!-- 公共留言板 -->
+        <div class="container  public-board-con">
+        </div>
+
+        <!-- 私人留言板 -->
+        <div class="container your-board-con" style="display:none;">
+        </div>
     </main>
     <div class="text-bord ">
         <div class="container">
             <div class="input-field">
                 <i class="material-icons prefix">mode_edit</i>
                 <textarea id="textarea1" class="materialize-textarea"></textarea>
-                <label for="textarea1">Write down your mind                </label>
+                <label for="textarea1">Write down your mind </label>
                 <div class="bord-buton">
                     <a class="waves-effect waves-light btn  right">
                         <i class="material-icons left">done</i>submit</a>
@@ -101,7 +84,6 @@
             </div>
         </div>
     </div>
-
 </body>
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script src="js/materialize.min.js"></script>
