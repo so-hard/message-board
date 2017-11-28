@@ -1,16 +1,4 @@
-var cookieArr = decodeURI(document.cookie); //cookie 转码
-// var carContainer = $("main .container");
-var textbordBtn = $(".text-bord .bord-buton .btn");
-var textcarContainer = $(".text-bord .container");
-var textInput = $(".text-bord textarea");
-var signOut = $(".side-nav .sign-out");
-var navName = $(".side-nav .user-view .name ");
-var publicBorad = $('main .public-board-con');
-var privateBorad = $('main .your-board-con');
-var tabPub = $('header ul .tab .public-board');
-var tabPri = $('header ul .tab .private-borad');
-var main = $('main');
-var iPage = 1;
+
 
 function scrollLoading() {
     main.scroll(
@@ -111,6 +99,20 @@ function creactNode(data) {
     carBox.append(carStacked);
     publicBorad.append(carBox);
 }
+
+var cookieArr = decodeURI(document.cookie); //cookie 转码
+// var carContainer = $("main .container");
+var textbordBtn = $(".text-bord .bord-buton .btn");
+var textcarContainer = $(".text-bord .container");
+var textInput = $(".text-bord textarea");
+var signOut = $(".side-nav .sign-out");
+var navName = $(".side-nav .user-view .name ");
+var publicBorad = $('main .public-board-con');
+var privateBorad = $('main .your-board-con');
+var tabPub = $('header ul .tab .public-board');
+var tabPri = $('header ul .tab .private-borad');
+var main = $('main');
+var iPage = 1;
 
 $(document).ready(checkCookie());
 $(".button-collapse").sideNav();
